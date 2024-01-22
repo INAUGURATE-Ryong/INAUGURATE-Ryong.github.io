@@ -7,4 +7,4 @@
 - [x] serch-consol
 
 ### 0.3.0
-- [ ] NAVER serchadvisor
+- [x] NAVER serchadvisor
