@@ -13,4 +13,7 @@
 - [x] [SEO NAVER](https://github.com/INAUGURATE-Ryong/INAUGURATE-Ryong.github.io/issues/6)
 
 ### 0.4.1
-- [ ] robots.txt add file
+- [x] robots.txt add file
+
+### 0.4.2
+- [ ] add site description 
