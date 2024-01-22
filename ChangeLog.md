@@ -7,4 +7,7 @@
 - [x] serch-consol
 
 ### 0.3.0
-- [x] NAVER serchadvisor
+- [x] NAVER serchadvisor add file
+
+### 0.4.0
+- [ ] [SEO NAVER](https://github.com/INAUGURATE-Ryong/INAUGURATE-Ryong.github.io/issues/6)
