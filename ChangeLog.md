@@ -19,4 +19,7 @@
 - [x] add site description
 
 ### 0.4.3
-- [ ] add og_title 
+- [x] add og_title
+
+### 0.4.4
+- [ ] add og_description 
