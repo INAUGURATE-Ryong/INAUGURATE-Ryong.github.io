@@ -10,4 +10,7 @@
 - [x] NAVER serchadvisor add file
 
 ### 0.4.0
-- [ ] [SEO NAVER](https://github.com/INAUGURATE-Ryong/INAUGURATE-Ryong.github.io/issues/6)
+- [x] [SEO NAVER](https://github.com/INAUGURATE-Ryong/INAUGURATE-Ryong.github.io/issues/6)
+
+### 0.4.1
+- [ ] robots.txt add file
