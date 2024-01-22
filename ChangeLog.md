@@ -22,4 +22,7 @@
 - [x] add og_title
 
 ### 0.4.4
-- [ ] add og_description 
+- [x] add og_description
+
+### 0.4.5
+- [ ] add url 
