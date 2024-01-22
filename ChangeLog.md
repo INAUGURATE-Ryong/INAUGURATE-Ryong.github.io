@@ -16,4 +16,7 @@
 - [x] robots.txt add file
 
 ### 0.4.2
-- [ ] add site description 
+- [x] add site description
+
+### 0.4.3
+- [ ] add og_title 
