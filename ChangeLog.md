@@ -28,4 +28,10 @@
 - [x] add url
 
 ### 0.5.0
-- [ ] firebase & deploy dev STG 
+- [x] firebase & deploy dev STG 
+
+### 0.6.0
+- [x] study css
+
+### 0.7.0
+- [ ] add resume.html 
