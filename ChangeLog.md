@@ -25,4 +25,7 @@
 - [x] add og_description
 
 ### 0.4.5
-- [ ] add url 
+- [x] add url
+
+### 0.5.0
+- [ ] firebase & deploy dev STG 
