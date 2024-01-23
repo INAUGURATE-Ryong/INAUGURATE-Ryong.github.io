@@ -2,84 +2,424 @@
 <html lang="ko">
 
 <head>
+	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 	<title>Resume</title>
-<style>
-       section{min-height:300px;}
-       nav{min-height:150px;}
-       header{min-height:50px;}
-       h1{text-align:center;}
-</style>
+	<style>
+		body {
+			font-family: 'Dongle', sans-serif;
+			font-size: x-large;
+		}
 
-<head>
+		section {
+			min-height: 10px;
+		}
+
+		nav {
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+
+		header {
+			min-height: 50px;
+		}
+
+		h1 {
+			text-align: center;
+			font-weight: 500;
+		}
+
+		h1 span {
+			color: red;
+		}
+
+		.name {
+			text-align: right;
+			margin-right: 50px;
+			font-size: xx-large;
+		}
+
+		.mail {
+			text-align: right;
+			margin-right: 50px;
+			font-size: x-large;
+		}
+
+		ul {
+			display: flex;
+			list-style: none;
+			padding: 0;
+
+		}
+
+		.list li {
+			background-color: antiquewhite;
+			width: 25%;
+			text-align: center;
+
+		}
+
+		.list li a {
+			display: block;
+			padding: 10px 20px;
+			/* 상하 10px, 좌우 20px의 패딩을 가진 버튼으로 설정 */
+			text-decoration: none;
+			/* 링크의 기본 밑줄 제거 */
+			color: black;
+			background-color: antiquewhite;
+			border: 1px solid #ccc;
+			/* 테두리 추가 */
+			border-radius: 5px;
+			/* 모서리를 둥글게 만듭니다. */
+			transition: background-color 0.3s ease;
+			/* 배경색 전환을 부드럽게 만듭니다. */
+			font-size: x-large;
+			letter-spacing: 10px;
+			font-weight: bold;
+
+		}
+
+		hr {
+			border-color: #93888c;
+			width: 50%;
+			height: 3px;
+			background-color: #93888c;
+		}
+
+		#profile {
+			background-color: #f4f4f4;
+			/* 배경색 지정 */
+			padding: 20px;
+			/* 내부 여백 추가 */
+		}
+
+		#profile h2 {
+			color: #333;
+			/* 제목의 글자색 지정 */
+			border-bottom: 2px solid #333;
+			/* 제목 아래에 선 추가 */
+			padding-bottom: 10px;
+			/* 제목 아래 여백 추가 */
+		}
+
+		#profile p {
+			margin-top: 10px;
+			/* 문단 위 여백 추가 */
+			line-height: 1.5;
+			/* 줄 간격 설정 */
+			font-size: xx-large;
+		}
+
+		/* 마지막 줄에 배경색 적용 */
+		#profile p:last-child {
+			background-color: #f4f4f4;
+			padding: 10px;
+			margin-bottom: 0;
+			/* 마지막 문단의 아래 여백 제거 */
+		}
+
+		#education {
+			background-color: #f4f4f4;
+			/* 배경색 지정 */
+			padding: 20px;
+			/* 내부 여백 추가 */
+		}
+
+		#education h2 {
+			color: #333;
+			/* 제목의 글자색 지정 */
+			border-bottom: 2px solid #333;
+			/* 제목 아래에 선 추가 */
+			padding-bottom: 10px;
+			/* 제목 아래 여백 추가 */
+		}
+
+		#education {
+			background-color: #f4f4f4;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		#education table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		#education th,
+		#education td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: left;
+			text-align: center;
+			font-size: xx-large;
+
+		}
+
+		#education th {
+			background-color: #e0e0e0;
+		}
+
+		#education h2 {
+			color: #333;
+			border-bottom: 2px solid #333;
+			padding-bottom: 10px;
+		}
+
+		#experience {
+			background-color: #f4f4f4;
+			/* 배경색 지정 */
+			padding: 20px;
+			/* 내부 여백 추가 */
+		}
+
+		#experience h2 {
+			color: #333;
+			/* 제목의 글자색 지정 */
+			border-bottom: 2px solid #333;
+			/* 제목 아래에 선 추가 */
+			padding-bottom: 10px;
+			/* 제목 아래 여백 추가 */
+		}
+
+		#experience {
+			background-color: #f4f4f4;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		#experience table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		#experience th,
+		#experience td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: left;
+			text-align: center;
+			font-size: xx-large;
+
+		}
+
+		#experience th {
+			background-color: #e0e0e0;
+		}
+
+		#experience h2 {
+			color: #333;
+			border-bottom: 2px solid #333;
+			padding-bottom: 10px;
+		}
+
+		#skills {
+			background-color: #f4f4f4;
+			/* 배경색 지정 */
+			padding: 20px;
+			/* 내부 여백 추가 */
+		}
+
+		#skills h2 {
+			color: #333;
+			/* 제목의 글자색 지정 */
+			border-bottom: 2px solid #333;
+			/* 제목 아래에 선 추가 */
+			padding-bottom: 10px;
+			/* 제목 아래 여백 추가 */
+		}
+
+		#skills {
+			background-color: #f4f4f4;
+			padding: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		#skills table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		#skills th,
+		#skills td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: left;
+			text-align: center;
+			font-size: xx-large;
+		}
+
+		#skills th {
+			background-color: #e0e0e0;
+		}
+
+		#skills h2 {
+			color: #333;
+			border-bottom: 2px solid #333;
+			padding-bottom: 10px;
+			margin-bottom: 20px
+		}
+
+
+		footer {
+			background-color: #f4f4f4;
+			color: #333;
+			text-align: center;
+			margin-bottom: 20px; /* 여백 추가 */
+
+		}
+	</style>
+
+</head>
 
 <body>
 	<header>
-		<h1>성실함과 치열함으로 일궈낸 ‘올라운더’</h1>
-		<h2>안우용</h2>
-	<header/>
+		<h1>성실함과 치열함으로 일궈낸 '<span>올라운더</span>'</h1>
+		<hr>
+		<h2 class="name">안우용</h2>
+		<h2 class="mail">📧dksdndyd123@gmail.com</h2>
+		<header>
 
-	<nav>
-		<ul>
-			<li><a href="#profile">프로필</a></li>
-			<li><a href="#profile">학력</a></li>
-			<li><a href="#profile">경력</a></li>
-			<li><a href="#profile">기술</a></li>
-		</ul>
-	</nav>
-
-
-<article>
-	<section id="profile">
-	  <h2>프로필</h2>
-	  <p>
-		[프로필 내용]
-	  </p>
-	</section>
-
-	<section id="education">
-	  <h2>학력</h2>
-	  <ul>
-		  <li>
-			  <h3>[학교명]  [학과]  [학위]  [졸업일]</h3>
-			  <p>
-			    [학력내용]
-			  </p>
-		</li>
-	  </ul>
-	</section>
-
-	<section id="experience">
-		<h2>경력</h2>
-		<ul>
-			<li>
-				<h3>[회사명] [직책] [근무기간] [주요 업무]</h3>
-				<p>
-				  [경력 내용]
-				</p>
-			</li>
-		</ul>
-	</section>
-
-	<section id="skills">
-		<h2>기술</h2>
-		<ul>
-			<li>
-				<h3>[기술명] [숙련도]</h3>
-			</li>
-		</ul>
-	</section>
-</article>
+			<nav>
+				<ul class="list">
+					<li><a href="#profile">프 로 필</a></li>
+					<li><a href="#education">학 력</a></li>
+					<li><a href="#experience">경 력</a></li>
+					<li><a href="#skills">기 술</a></li>
+				</ul>
+			</nav>
 
 
-<footer>
-	<p>[사이트 주소] @ [년도]</p>
-</footer>
+			<article>
+				<section id="profile">
+					<h2>프로필</h2>
+					<p>
+						- 학창시절부터 수학을 좋아하며, 강의 경험을 통해 문제 해결 및 소통 능력을 기르고, 개발자로의 필수 덕목인 커뮤니케이션을 길렀습니다.<br>
+						- 경영학사 및 빅데이터 전문가 양성과정 이수 후, IT 교육 운영에 참여하며 기술 습득을 했으며, 이를 개발 분야에서 활용하고자 합니다.<br>
+						- 백엔드 개발 관련 역량을 키워, 개발자로서의 경력을 쌓아가며 미래의 성장을 향해 나아가고자 합니다.
+					</p>
+				</section>
+
+				<section id="education">
+					<h2>학력 및 교육이력</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>학교명 / 교육기관</th>
+								<th>학과 / 교육명</th>
+								<th>학위</th>
+								<th>졸업일 / 수료일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>국가평생교육진흥원</td>
+								<td>경영학과</td>
+								<td>학사</td>
+								<td>2019.08</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>ITWiLL</td>
+								<td>빅데이터와 머신러닝을 활용한 데이터 분석 전문가 양성과정(880시간)</td>
+								<td>NCS기반 훈련과정 이수</td>
+								<td>2019.03</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section id="experience">
+					<h2>경력사항</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>회사명</th>
+								<th>직책</th>
+								<th>근무기간</th>
+								<th>주요 업무</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>거인의 어깨</td>
+								<td>프리랜서</td>
+								<td>2019.03 ~ 2020.02</td>
+								<td>수학  전임강사</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>카이스트 학원</td>
+								<td>프리랜서</td>
+								<td>2017.09 ~ 2018.03</td>
+								<td>수학  전임강사</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>원리수학</td>
+								<td>프리랜서</td>
+								<td>2015.10 ~ 2017.08</td>
+								<td>수학 전임강사</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section id="skills">
+					<h2>기술스텍</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>기술명</th>
+								<th>숙련도</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Pyhton 3.9.0</td>
+								<td>●●●○○</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>Java 17</td>
+								<td>●●●○○</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>Spring Boot 3.2.2</td>
+								<td>●●●○○</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>HTML5</td>
+								<td>●●●○○</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>CSS3</td>
+								<td>●●●○○</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</article>
+
+
+			<footer>
+				<p>https://inaugurate-ryong.github.io ⓒ 2024</p>
+			</footer>
 
 </body>
+
 </html>
-
-
-
-
-
