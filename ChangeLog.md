@@ -34,4 +34,7 @@
 - [x] study css
 
 ### 0.7.0
-- [ ] add resume.html 
+- [x] add resume.html 
+
+### 0.8.0
+- [ ] push-docker-hub
