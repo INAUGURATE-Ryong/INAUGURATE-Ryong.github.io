@@ -37,4 +37,7 @@
 - [x] add resume.html 
 
 ### 0.8.0
-- [ ] push-docker-hub
+- [x] push-docker-hub
+
+### 0.9.0
+- [ ] deploy-fly.io
