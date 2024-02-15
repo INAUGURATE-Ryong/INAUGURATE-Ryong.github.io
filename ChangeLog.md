@@ -42,5 +42,8 @@
 ### 0.9.0
 - [x] deploy-fly.io
 
-###240215.1
-- [ ] Dockerfile
+### 240215.1
+- [x] Dockerfile
+
+### 240215.2
+- [ ] fly deploy
