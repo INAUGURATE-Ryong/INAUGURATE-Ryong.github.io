@@ -40,4 +40,7 @@
 - [x] push-docker-hub
 
 ### 0.9.0
-- [ ] deploy-fly.io
+- [x] deploy-fly.io
+
+###240215.1
+- [ ] Dockerfile
