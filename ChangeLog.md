@@ -46,4 +46,10 @@
 - [x] Dockerfile
 
 ### 240215.2
-- [ ] fly deploy
+- [x] fly deploy
+
+### 240215.3
+- [x] copy
+
+### 240215.4
+- [ ] git

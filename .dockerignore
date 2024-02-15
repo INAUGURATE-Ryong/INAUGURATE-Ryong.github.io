@@ -1,1 +1,8 @@
 fly.toml
+Dockerfile
+ChangeLog.md
+history.log
+README.md
+LICENSE.txt
+firebase.json
+
